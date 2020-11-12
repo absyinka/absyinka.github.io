@@ -1,107 +1,91 @@
-function add(x,y) {
+function add(x, y) {
+  let sum = parseFloat(x) + parseFloat(y);
 
-	let sum = parseFloat(x) + parseFloat(y);
-
-	return sum;
+  return sum;
 }
 
-function substract(x,y) {
+function substract(x, y) {
+  let diff = parseFloat(x) - parseFloat(y);
 
-	let diff = parseFloat(x) - parseFloat(y);
-
-	return diff;
+  return diff;
 }
 
+function multiply(x, y) {
+  let multi = parseFloat(x) * parseFloat(y);
 
-function multiply(x,y) {
-
-	let multi = parseFloat(x) * parseFloat(y);
-
-	return multi;
+  return multi;
 }
 
-function division(x,y) {
+function division(x, y) {
+  let divide = parseFloat(x) / parseFloat(y);
 
-	let divide = parseFloat(x) / parseFloat(y);
-
-	return divide;
+  return divide;
 }
 
+function modulus(x, y) {
+  let modu = parseFloat(x) % parseFloat(y);
 
-function modulus(x,y) {
-
-	let modu = parseFloat(x) % parseFloat(y);
-
-	return modu;
+  return modu;
 }
-
 
 function getNum1() {
+  let x = document.getElementById("num1");
 
-	let x = document.getElementById('num1');
-
-	return x.value;
-
+  return x.value;
 }
 
 function getNum2() {
+  let y = document.getElementById("num2");
 
-	let y = document.getElementById('num2');
-
-	return y.value;
+  return y.value;
 }
 
 function addClick() {
+  let x = getNum1();
 
-	let x = getNum1();
+  let y = getNum2();
 
-	let y = getNum2();
+  let result = add(x, y);
 
-	let result = add(x,y);
-
-	document.getElementById('result').value = result;
+  document.getElementById("result").value = result;
 }
 
 function subClick() {
+  let x = getNum1();
 
-	let x = getNum1();
+  let y = getNum2();
 
-	let y = getNum2();
+  let result = substract(x, y);
 
-	let result = substract(x,y);
-
-	document.getElementById('result').value = result;
+  document.getElementById("result").value = result;
 }
 
 function mulClick() {
+  let x = getNum1();
 
-	let x = getNum1();
+  let y = getNum2();
 
-	let y = getNum2();
+  let result = multiply(x, y);
 
-	let result = multiply(x,y);
-
-	document.getElementById('result').value = result;
+  document.getElementById("result").value = result;
 }
 
 function divClick() {
+  let x = getNum1();
 
-	let x = getNum1();
+  let y = getNum2();
 
-	let y = getNum2();
+  let result = division(x, y);
 
-	let result = division(x,y);
-
-	document.getElementById('result').value = result;
+  document.getElementById("result").value = result;
 }
 
 function modClick() {
+  let x = getNum1();
 
-	let x = getNum1();
+  let y = getNum2();
 
-	let y = getNum2();
+  let result = modulus(x, y);
 
-	let result = modulus(x,y);
-
-	document.getElementById('result').value = result;
+  document.getElementById("result").value = result;
 }
